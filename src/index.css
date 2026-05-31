@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f7f1e3;
+  --color-gold-200: #ede0c1;
+  --color-gold-300: #e0cc9a;
+  --color-gold-400: #C5A059;
+  --color-gold-500: #b08e4d;
+  --color-gold-600: #9c7d41;
+  --color-gold-700: #85642a;
+  --color-gold-800: #6b5025;
+  --color-gold-900: #574120;
+  
+  --color-graphite: #020817; /* Changing graphite to deep navy */
+  --color-champagne: #F8FAFC; /* Softer white for contrast */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#020817] text-[#F8FAFC] antialiased selection:bg-gold-400 selection:text-black;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+  }
+}
+
+.glass {
+  @apply bg-white/[0.02] backdrop-blur-2xl border border-white/5;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #9c7d41 50%, #C5A059 100%);
+}
+
+.text-gold {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(135deg, #e0cc9a 0%, #C5A059 50%, #e0cc9a 100%);
+}
+
+.mask-fade-bottom {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}

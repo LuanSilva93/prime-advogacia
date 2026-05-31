@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#020817"/>
+  <rect x="64" y="64" width="384" height="384" fill="none" stroke="#C5A059" stroke-width="8" opacity="0.4"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="'Playfair Display', serif" font-size="240" font-weight="bold" fill="#C5A059" style="letter-spacing: -6px;">PR</text>
+  <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', sans-serif" font-size="32" font-weight="600" fill="#C5A059" style="letter-spacing: 12px; opacity: 0.8">PRIME</text>
+</svg>
